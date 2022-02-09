@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet'/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Bingwa Developers</title>
+</head>
+<body>
+
+    <!-- starts nav bar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">Bingwa Developers</a>
+            <button
+             class="navbar-toggler" 
+             type="button" 
+             data-bs-toggle="collapse" 
+             data-bs-target="#navmenu">
+
+             <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#learn" class="nav-link">What's You'll Learn</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#questions" class="nav-link">Questions</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#instructors" class="nav-link">Instructors</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+       
+    </nav>
+    <!-- ends nav bar -->
+
+    <!-- show case starts -->
+    <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+
+        <div class="container">
+
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <h1>Become a Frontend <span class="text-warning">Web Developer</span>  </h1>
+                    <p class="lead my-4">
+                        Coding is an evolving discipline. That’s often what draws people to it – aside from the opportunity to work with some of the biggest companies in the world –
+                         but it also means that those in the industry need to constantly look forward.
+                    </p>
+
+                    <button 
+                    class="btn btn-primary btn-lg"
+                    data-bs-toggle="modal"
+                    data-bs-target="#start"
+
+                    >
+                        Get Started
+                    </button>
+                </div>
+                <img class="img-fluid w-50 d-none d-sm-block" src="img/undraw_designer_girl_re_h54c.svg" alt="">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- show case ends -->
+
+     <!-- newsletter starts -->
+
+     <section class="bg-primary text-light p-5">
+         <div class="container">
+             <div class="d-md-flex justify-content-between align-items-center">
+                <h3 class="mb-3 mb-md-0">Signup to Our NewsLetter</h3>
+
+                <div class="input-group news-input ">
+                    <input 
+                    type="text" 
+                    class="form-control" 
+                    placeholder="Enter email" 
+                    >
+
+                    <button 
+                    class="btn btn-dark btn-lg" 
+                    type="button" 
+                    id="button-addon2">Sign Up</button>
+                </div>
+
+             </div>
+         </div>
+
+     </section>
+
+     <!-- newsletter ends -->
+
+<!-- bOXES starts -->
+<section class="p-5">
+    <div class="container">
+        <div class="row text-center g-4">
+            <div class="col-md">
+                <div class="card bg-dark text-light">
+                    <div class="card-body text-center">
+                         <div class="h1 mb-3">
+                             <i class="bi bi-laptop"></i>
+                         </div>
+                         <h3 class="card-title mb-3">Virtual</h3>
+                         <p class="card-text">
+                            You can participate in our online training sessions from the 
+                            device of your choice. You can use your phone, computer or tablet.
+                         </p>
+                         <a href="#" class="btn btn-primary">Read More</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card bg-secondary text-light">
+                    <div class="card-body text-center">
+                         <div class="h1 mb-3">
+                             <i class="bi bi-person-square"></i>
+                         </div>
+                         <h3 class="card-title mb-3">Hybrid</h3>
+                         <p class="card-text">
+                            You can also participate in a hybrid way to our trainings.
+                             Participate virtually or in person according to your availability.
+                         </p>
+                         <a href="#" class="btn btn-dark">Read More</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card bg-dark text-light">
+                    <div class="card-body text-center">
+                         <div class="h1 mb-3">
+                             <i class="bi bi-people"></i>
+                         </div>
+                         <h3 class="card-title mb-3">In Person</h3>
+                         <p class="card-text">
+                            you can attend our training sessions in person at our 
+                            campus in Kinshasa. our program is flexible and adapted to your schedule
+                         </p>
+                         <a href="#" class="btn btn-warning">Read More</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- bOXES ends -->
+
+<!-- learn section starts -->
+<section class="p-5" id="learn">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-md">
+                <img src="img/undraw_developer_activity_re_39tg.svg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col-md p-5">
+                <h2>Learn basics</h2>
+                <p class="lead">HTML, or HyperText Markup Language, is the foundation of all websites. It’s the main file type that is loaded in your browser when you look at a website. The HTML file contains all the content
+                     on the page, and it uses tags to denote different types of content.</p>
+
+                <p class="lead">
+                    CSS, or Cascading Style Sheets, lets you style that HTML content so it looks nice and fancy. You can add colors, custom fonts, and layout the elements of your website however 
+                    you want them to look. You can even create animations and shapes with CSS!
+                </p>
+
+                <p class="lead">
+                    JavaScript is a programming language that was designed to run in the browser. Using JavaScript, you can make your website dynamic, meaning it
+                     will respond to different inputs from the user, or other sources.
+                </p>
+
+                <a href="#" class="btn btn-light mt-3">
+                   <i class="bi bi-chevron-right"></i> Read More
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- learn section ends -->
+
+<section class="p-5 bg-dark text-light" id="learn">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            
+
+            <div class="col-md p-5">
+                <h2>Learn React</h2>
+                <p class="lead">As a learner, you have many libraries and frameworks that can help you develop projects for the web. 
+                    It may even become tricky to pick one and get started at times.</p>
+
+                <p class="lead">
+                    ReactJS (aka React) is an open-source JavaScript-based user interface library. It is insanely popular in web development communities today. 
+                    React Native is equally popular among mobile application developers.
+
+                    Learning something new doesn't have to be very different. If you have a map or guide that lets you know "if you first learn A, next attempt 
+                    to learn B. Then you will find C much easier", things will be much smoother for you.
+                </p>
+
+                <a href="#" class="btn btn-light mt-3">
+                   <i class="bi bi-chevron-right"></i> Read More
+                </a>
+
+            </div>
+
+            <div class="col-md">
+                <img src="img/undraw_react_y-7-wq.svg" class="img-fluid" alt="">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Questions -->
+<section id="questions" class="p-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Frequentely Asked Questions</h2>
+        <div class="accordion accordion-flush" id="questions">
+            <!-- first item -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button 
+                class="accordion-button collapsed" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#question-one">
+                  What does a Frontend Web Developer do
+                </button>
+              </h2>
+              <div
+               id="question-one" 
+               class="accordion-collapse collapse" 
+               data-bs-parent="#questions">
+                <div class="accordion-body">A front-end developer builds the front-end portion of websites and web applications—that is, the part that users actually see and interact with. A front-end developer creates websites and applications using web languages such as HTML, CSS,
+                     and JavaScript allow users to access and interact with the site or app.</div>
+              </div>
+            </div>
+            <!-- second item -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button 
+                  class="accordion-button collapsed" 
+                  type="button" 
+                  data-bs-toggle="collapse" 
+                  data-bs-target="#question-two">
+                    What ever Frontend Web Developer should do
+                  </button>
+                </h2>
+                <div
+                 id="question-two" 
+                 class="accordion-collapse collapse" 
+                 data-bs-parent="#questions">
+                  <div class="accordion-body">HTML, CSS, and JavaScript are the three basic tools used in frontend development. However, you'll need other abilities to make them more efficient and operate in your favor. As a result, the best front-end 
+                      developers are also experts in automation and web performance.</div>
+                </div>
+              </div>
+            <!-- third item -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button 
+                  class="accordion-button collapsed" 
+                  type="button" 
+                  data-bs-toggle="collapse" 
+                  data-bs-target="#question-three">
+                    How do Frontend Developer make money
+                  </button>
+                </h2>
+                <div
+                 id="question-three" 
+                 class="accordion-collapse collapse" 
+                 data-bs-parent="#questions">
+                  <div class="accordion-body">Usually, when you reach job methods there shows many skill matching jobs. After that, you choose a perfect match to your skill and apply to these jobs to covens take these jobs. So, you got any job from freelancing you can do work from 
+                      home as a front end developer any kind of projects are available here</div>
+                </div>
+              </div>
+          </div>
+          <!-- forth item -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button 
+              class="accordion-button collapsed" 
+              type="button" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#question-four">
+                Is system design Important for Frotend Web Developers
+              </button>
+            </h2>
+            <div
+             id="question-four" 
+             class="accordion-collapse collapse" 
+             data-bs-parent="#questions">
+              <div class="accordion-body">Many of the topics mentioned in the "Build User Interface" format are also relevant for front end system design - API design, scalability, performance, user experience, i18n, accessibility, security. Candidates should take the initiative
+                   and bring these topics up and lead the discussion with the interviewer.</div>
+            </div>
+          </div>
+          <!-- five section -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button 
+              class="accordion-button collapsed" 
+              type="button" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#question-five">
+                How do prepare for Frontend Developer Interview
+              </button>
+            </h2>
+            <div
+             id="question-five" 
+             class="accordion-collapse collapse" 
+             data-bs-parent="#questions">
+              <div class="accordion-body">When you're preparing for your interview, try code most of your layout without looking at the result till the end. If HTML and CSS are the bread and butter of front-end development, then Javascript is the knife. Companies will spend a good
+                   amount of time during your interview testing your knowledge of Javascript</div>
+            </div>
+          </div>
+      </div>
+
+
+    </div>
+</section>
+<!-- instructors -->
+<section id="intructors" class="p-5 bg-primary">
+    <div class="container">
+        <h2 class="text-center text-white">Our Instructors</h2>
+        <p class="lead text-center text-white mb-5">
+            Our recruiters are available and qualified to assist you in your learning process
+        </p>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+                <div class="card bg-light">
+                    <div class="card-body text-center">
+                        <img src="https://randomuser.me/api/portraits/men/12.jpg" class="rounded-circle mb-3" alt="instructors">
+                         <h3 class="card-title mb-3">Peter Boss</h3>
+                         <p class="card-text">Senior front-end developer with 7+ years of experience
+                              designing and building responsive web design and mobile apps in the
+                               financial industry. Proficient with CSS and JS Frameworks, with extensive
+                                knowledge of UX and user psychology.</p>
+                        <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                        <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                        <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                        <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                        
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="card bg-light">
+                    <div class="card-body text-center">
+                        <img src="https://randomuser.me/api/portraits/women/12.jpg" class="rounded-circle mb-3" alt="instructors">
+                         <h3 class="card-title mb-3">Joy Alice</h3>
+                         <p class="card-text">Joy is a passionate software engineer with over fifteen years of experience developing software under both web and Windows environments. She specializes in Node.js and .NET frameworks, as well as React and AngularJS on the front-end. Joy holds a Master's degree in computer science. 
+                              </p>
+                        <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                        <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                        <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                        <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                        
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="card bg-light">
+                    <div class="card-body text-center">
+                        <img src="https://randomuser.me/api/portraits/men/20.jpg" class="rounded-circle mb-3" alt="instructors">
+                         <h3 class="card-title mb-3">Bob Brown</h3>
+                         <p class="card-text">In 2012, Bob earned a master's degree in computer engineering but he soon learned his true north was in system administration. His programming background has helped him automate most of his tasks along the way and he eventually ended up in cloud computing as it gave him even more possibilities. </p>
+                        <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                        <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                        <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                        <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                        
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="card bg-light">
+                    <div class="card-body text-center">
+                        <img src="https://randomuser.me/api/portraits/women/50.jpg" class="rounded-circle mb-3" alt="instructors">
+                         <h3 class="card-title mb-3">Ashley Keys</h3>
+                         <p class="card-text">Ashey is a full-stack developer with a broad and versatile coding skill set.She quickly helps startups and enterprises with prototypes and ideas by efficiently building those things into reality. Her expertise lies in building MVPs, apps, enterprise software, scalable microservices, web crawlers, REST and Socket APIs.</p>
+                        <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                        <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                        <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                        <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                        
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+<!-- contact map -->
+<section class="p-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md">
+                <h2 class="text-center mb-4">Contact Info</h2>
+                <ul class="list-group list-group-flush-lead">
+                    <li class="list-group-item">
+                        <span class="fw-bold">Main Location:</span>  25 Street Kitambo
+                    </li>
+                    <li class="list-group-item">
+                        <span class="fw-bold">Phone Number:</span>  24398522587
+                    </li>
+                    <li class="list-group-item">
+                        <span class="fw-bold">Email:</span>  now@Bingwadevelopers.com
+                    </li>
+                    <li class="list-group-item">
+                        <span class="fw-bold">Country</span>  Congo Democratic
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md">
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- footer -->
+<footer class="p-5 bg-dark text-white text-center position-relative">
+    <div class="container">
+        <p class="lead">Copyright &copy; 2022 Bingwa Developers Bootcamp</p>
+        <p class="fst-italic "><span class="text-warning">Designed By:  </span><a href="https://github.com/bahati7/" target="_blank"class="text-decoration-none" >Bahati Philemon</a></p>
+        <a href="#"class="position-absolute bottom-0 end-0 p-5">
+            <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+    </div>
+
+</footer>
+
+<!-- modal -->
+
+<div class="modal fade" id="start" tabindex="-1" aria-labelledby="start" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="start">Contact Form</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p class="lead">Fill this form to receive our news</p>
+            <form>
+                <div class="mb-3">
+                    <label for="first-name" class="col-form-label">
+                        First Name:
+                    </label>
+                    <input type="text" class="form-control"id="first-name">
+                </div>
+                <div class="mb-3">
+                    <label for="last-name" class="col-form-label">
+                        Last Name:
+                    </label>
+                    <input type="text" class="form-control"id="last-name">
+                </div>
+                <div class="mb-3">
+                    <label for="phone-number" class="col-form-label">
+                        Phone Number:
+                    </label>
+                    <input type="text" class="form-control"id="phone-number">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="col-form-label">
+                        Email:
+                    </label>
+                    <input type="email" class="form-control"id="email">
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+        <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+
+        <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+    crossorigin="anonymous"></script>
+
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoicGhpbDciLCJhIjoiY2t6ZWZkOWgyMGd2NzJwbzBoejR0NjVkdSJ9.nrIutjBhNyZBG8bh-B6UbQ';
+var map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/mapbox/streets-v11',
+center:[-71.060982,42.35725],
+zoom:18
+});
+    </script>
+
+
+    
+</body>
+</html>
